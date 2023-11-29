@@ -3,14 +3,17 @@
 %define devname %mklibname neatvnc -d
 
 Name: neatvnc
-Version: 0.6.0
+Version: 0.7.1
 Release: 1
 Source0: https://github.com/any1/neatvnc/archive/refs/tags/v%{version}.tar.gz
 Summary: VNC server library
 URL: https://github.com/any1/neatvnc
 License: ISC
 Group: System/Libraries
-BuildRequires: meson ninja
+BuildRequires: meson
+BuildRequires: ninja
+BuildRequires: pkgconfig(nettle)
+BuildRequires: pkgconfig(gmp)
 BuildRequires: pkgconfig(gbm)
 BuildRequires: pkgconfig(libavcodec)
 BuildRequires: pkgconfig(libavfilter)
@@ -23,14 +26,14 @@ BuildRequires: pkgconfig(libturbojpeg)
 BuildRequires: pkgconfig(aml)
 
 %description
-VNC server library
+VNC server library.
 
 %package -n %{libname}
 Summary: VNC server library
 Group: System/Libraries
 
 %description -n %{libname}
-VNC server library
+VNC server library.
 
 %package -n %{devname}
 Summary: Development files for %{name}
