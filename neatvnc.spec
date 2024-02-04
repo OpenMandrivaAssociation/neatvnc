@@ -3,7 +3,7 @@
 %define devname %mklibname neatvnc -d
 
 Name: neatvnc
-Version: 0.7.1
+Version: 0.7.2
 Release: 1
 Source0: https://github.com/any1/neatvnc/archive/refs/tags/v%{version}.tar.gz
 Summary: VNC server library
