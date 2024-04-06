@@ -4,7 +4,7 @@
 
 Name: neatvnc
 Version: 0.8.0
-Release: 1
+Release: 2
 Source0: https://github.com/any1/neatvnc/archive/refs/tags/v%{version}.tar.gz
 Summary: VNC server library
 URL: https://github.com/any1/neatvnc
